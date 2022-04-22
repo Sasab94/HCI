@@ -1,2 +1,0 @@
-# HCI
-Interakcija covek racunar
