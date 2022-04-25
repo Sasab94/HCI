@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Vođenje evidencije o mapi događaja" Height="550" Width="1100" FontSize="20" WindowStartupLocation="Manual" Top="100" Left="100">
     <DockPanel>
-        <Grid>
+    <Grid>
             <Menu DockPanel.Dock="Top" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="25">
                 <MenuItem Header="Kreiraj" FontSize="16" FontWeight="Bold">
                     <MenuItem Header="Novi dogadjaj" Name="Dogadjaj" InputGestureText="CTRL + D" Click="Novi_Dogadjaj_Click" ToolTip="Kreiranje novog dogadjaja"/>
@@ -27,6 +27,6 @@
             <Canvas>
                 <Image Height="485" Width="928" Source="ikonice\mapa1.png" />
             </Canvas>
-        </Grid>
+    </Grid>
     </DockPanel>
 </Window>
