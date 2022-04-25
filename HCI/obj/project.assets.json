@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sasa\\Desktop\\Interakcija covek racunar\\HCI\\HCI\\HCI.csproj",
+      "projectUniqueName": "C:\\Users\\Sasa\\Desktop\\InterakcijaCovekRacunar\\HCI\\HCI\\HCI.csproj",
       "projectName": "HCI",
-      "projectPath": "C:\\Users\\Sasa\\Desktop\\Interakcija covek racunar\\HCI\\HCI\\HCI.csproj",
+      "projectPath": "C:\\Users\\Sasa\\Desktop\\InterakcijaCovekRacunar\\HCI\\HCI\\HCI.csproj",
       "packagesPath": "C:\\Users\\Sasa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sasa\\Desktop\\Interakcija covek racunar\\HCI\\HCI\\obj\\",
+      "outputPath": "C:\\Users\\Sasa\\Desktop\\InterakcijaCovekRacunar\\HCI\\HCI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

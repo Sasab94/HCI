@@ -1,0 +1,28 @@
+﻿<Window x:Class="HCI.DijalogZaDodavanjeTipa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI"
+        mc:Ignorable="d"
+        Title="DijalogZaDodavanjeTipa" FontSize="12" Height="270" Width="510" WindowStartupLocation="Manual" Top="130" Left="250" ResizeMode="NoResize">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="CommandBinding_Executed"/>
+    </Window.CommandBindings>
+    <Grid>
+        <Label Height="31" FontSize="16" HorizontalAlignment="Left" Margin="20,43,0,0" Name="label1" VerticalAlignment="Top" Width="120" FontStretch="Normal" AllowDrop="False" VerticalContentAlignment="Top" FontWeight="Normal" FontStyle="Normal" Content="*Oznaka tipa:" />
+        <Label Content="*Ime tipa:" Height="34" HorizontalAlignment="Left" Margin="20,74,0,0" Name="label2" VerticalAlignment="Top" Width="120" FontSize="16" />
+        <Label Content=" Opis tipa:" Height="32" HorizontalAlignment="Left" Margin="20,102,0,0" Name="label3" VerticalAlignment="Top" Width="108" FontSize="16" />
+        <Label Content="*Ikonica:" Height="28" HorizontalAlignment="Left" Margin="308,44,0,0" Name="label4" VerticalAlignment="Top" Width="77" FontSize="16" />
+
+        <TextBox Name="oznakaTipaTextBox" Text="{Binding Path=OznakaTipa, UpdateSourceTrigger=PropertyChanged}" Height="32" Margin="0,43,231,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="137" RenderTransformOrigin="0.764,0.13" FontSize="16" ></TextBox>
+        <TextBox Text="{Binding Path=NazivTipa, UpdateSourceTrigger=PropertyChanged}" Height="32" HorizontalAlignment="Right" Margin="0,77,231,0" VerticalAlignment="Top" Width="137" FontSize="16" ></TextBox>
+        <TextBox Text="{Binding Path=OpisTipa,UpdateSourceTrigger=PropertyChanged}" Height="60" HorizontalAlignment="Right" Margin="0,113,95,0" VerticalAlignment="Top" Width="273" AcceptsReturn="True" TextWrapping="Wrap" FontSize="16" ></TextBox>
+        <Image Source="{Binding IkonicaTipa}" Name="image3" Stretch="Fill" Height="65" HorizontalAlignment="Left" Margin="405,43,0,0" VerticalAlignment="Top" Width="79" RenderTransformOrigin="2.243,-0.6" />
+        <Button Content="Izaberi" Name="button1" Click="button1_Click_1" Height="32" Width="75" Margin="308,77,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" />
+        <Button Content="Potvrdi" HorizontalAlignment="Right" Margin="0,0,10,12" Name="Potvrdi" Width="75" Height="32" VerticalAlignment="Bottom" Click="Novi_tip" FontSize="16" FontWeight="Bold" />
+        <Label Content="Unesite osnovne podatke o tipu resursa:" Margin="10,10,0,0" x:Name="label8_Copy" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left" Width="328" FontSize="16" />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="405,43,0,0" VerticalAlignment="Top" Width="79"/>
+        <Button Click="button1_Copy_Click" Content="Otkazi" x:Name="button1_Copy" Height="32" HorizontalAlignment="Right" Margin="0,0,95,12" VerticalAlignment="Bottom" Width="75" FontSize="16" FontWeight="Bold" />
+    </Grid>
+</Window>

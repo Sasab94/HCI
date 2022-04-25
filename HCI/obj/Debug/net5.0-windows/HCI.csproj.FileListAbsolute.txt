@@ -1,3 +1,17 @@
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeDogadjaja.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeEtikete.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeTipa.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeDogadjaja.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeEtikete.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeTipa.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaDogadjaja.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaEtiketa.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaTipa.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI_MarkupCompile.cache
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI_MarkupCompile.lref
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.exe
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.deps.json
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.runtimeconfig.json
@@ -5,18 +19,80 @@ C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\bin\Debug\net5.0-windows
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.dll
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\bin\Debug\net5.0-windows\ref\HCI.dll
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.pdb
-C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.csproj.AssemblyReference.cache
-C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\MainWindow.g.cs
-C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\App.g.cs
-C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI_MarkupCompile.cache
-C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI_MarkupCompile.lref
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\bin\Debug\net5.0-windows\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\bin\Debug\net5.0-windows\WPFToolkit.dll
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\bin\Debug\net5.0-windows\Xceed.Wpf.Toolkit.dll
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\GrafikSveta.baml
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\GrafikSveta.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeDogadjaja.baml
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeEtikete.baml
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeTipa.baml
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeDogadjaja.baml
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeEtikete.baml
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeTipa.baml
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaDogadjaja.baml
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaEtiketa.baml
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaTipa.baml
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.g.resources
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.AssemblyInfoInputs.cache
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.AssemblyInfo.cs
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.csproj.CoreCompileInputs.cache
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.csproj.CopyComplete
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.dll
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\ref\HCI.dll
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.pdb
 C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.genruntimeconfig.cache
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.csproj.AssemblyReference.cache
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HelpViewer.g.cs
+C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\HelpViewer.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.exe
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.deps.json
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.runtimeconfig.json
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.runtimeconfig.dev.json
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.dll
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\bin\Debug\net5.0-windows\ref\HCI.dll
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\bin\Debug\net5.0-windows\HCI.pdb
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\bin\Debug\net5.0-windows\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\bin\Debug\net5.0-windows\WPFToolkit.dll
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\bin\Debug\net5.0-windows\Xceed.Wpf.Toolkit.dll
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.csproj.AssemblyReference.cache
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\GrafikSveta.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeDogadjaja.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeEtikete.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeTipa.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeDogadjaja.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeEtikete.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeTipa.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\GrafikSveta.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HelpViewer.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaDogadjaja.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaEtiketa.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaTipa.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI_MarkupCompile.cache
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI_MarkupCompile.lref
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeDogadjaja.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeEtikete.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaBrisanjeTipa.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeDogadjaja.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeEtikete.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\DijalogZaDodavanjeTipa.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HelpViewer.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaDogadjaja.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaEtiketa.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\TabelaTipa.baml
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.g.resources
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.AssemblyInfoInputs.cache
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.AssemblyInfo.cs
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.csproj.CoreCompileInputs.cache
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.csproj.CopyComplete
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.dll
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\ref\HCI.dll
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.pdb
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\HCI.genruntimeconfig.cache

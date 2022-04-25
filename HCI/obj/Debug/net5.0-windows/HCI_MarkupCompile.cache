@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\obj\Debug\net5.0-windows\
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\obj\Debug\net5.0-windows\
 HCI
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\Sasa\Desktop\Interakcija covek racunar\HCI\HCI\App.xaml
-11407045341
+C:\Users\Sasa\Desktop\InterakcijaCovekRacunar\HCI\HCI\App.xaml
+12-2001551749
 
-3-1233169557
-193-1891726104
-MainWindow.xaml;
+24-1179581358
+196437526104
+DijalogZaBrisanjeDogadjaja.xaml;DijalogZaBrisanjeEtikete.xaml;DijalogZaBrisanjeTipa.xaml;DijalogZaDodavanjeDogadjaja.xaml;DijalogZaDodavanjeEtikete.xaml;DijalogZaDodavanjeTipa.xaml;GrafikSveta.xaml;HelpViewer.xaml;MainWindow.xaml;TabelaDogadjaja.xaml;TabelaEtiketa.xaml;TabelaTipa.xaml;
 
 False
 

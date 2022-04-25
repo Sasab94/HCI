@@ -7,7 +7,75 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="DijalogZaBrisanjeDogadjaja.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DijalogZaBrisanjeEtikete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DijalogZaBrisanjeTipa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DijalogZaDodavanjeDogadjaja.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DijalogZaDodavanjeEtikete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DijalogZaDodavanjeTipa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GrafikSveta.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HelpViewer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TabelaDogadjaja.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TabelaEtiketa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TabelaTipa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="DijalogZaBrisanjeDogadjaja.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DijalogZaBrisanjeEtikete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DijalogZaBrisanjeTipa.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DijalogZaDodavanjeDogadjaja.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DijalogZaDodavanjeEtikete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DijalogZaDodavanjeTipa.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GrafikSveta.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HelpViewer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TabelaDogadjaja.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TabelaEtiketa.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TabelaTipa.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

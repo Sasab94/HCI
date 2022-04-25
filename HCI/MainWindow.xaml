@@ -3,30 +3,94 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cmd="clr-namespace:HCI.help.helpProvider"
         xmlns:local="clr-namespace:HCI"
         mc:Ignorable="d"
-        Title="Vođenje evidencije o mapi događaja" Height="550" Width="1100" FontSize="20" WindowStartupLocation="Manual" Top="100" Left="100">
-    <DockPanel>
-        <Grid>
-            <Menu DockPanel.Dock="Top" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="25">
-                <MenuItem Header="Kreiraj" FontSize="16" FontWeight="Bold">
-                    <MenuItem Header="Novi dogadjaj" Name="Dogadjaj" InputGestureText="CTRL + D" Click="Novi_Dogadjaj_Click" ToolTip="Kreiranje novog dogadjaja"/>
-                    <MenuItem Header="Novi tip" Name="Tip" InputGestureText="CTRL + T" Click="Novi_Tip_Click"  ToolTip="Kreiranje novog dogadjaja"/>
-                    <MenuItem Header="Nova etiketa" Name="Etiketa" InputGestureText="CTRL + E" Click="Nova_Etiketa_Click" ToolTip="Kreiranje novog dogadjaja"/>
-                </MenuItem>
-                <MenuItem Header="_Tabela" FontSize="16" FontWeight="Bold">
-                    <MenuItem Header="Tabela dogadjaja" Name="Tabela_dogadjaja"    ToolTip="Kreiranje novog dogadjaja"/>
-                    <MenuItem Header="Tabela tipova" Name="Tabela_tipova"   ToolTip="Kreiranje novog tipa"/>
-                    <MenuItem Header="Tabela etiketa" Name="Tabela_etiketa"   ToolTip="Kreiranje nove etikete"/>
-                </MenuItem>
-            </Menu>
+        ResizeMode="CanMinimize"
+        Title="Vođenje evidencije o mapi događaja" Height="560" Width="1200" FontSize="20" WindowStartupLocation="Manual" Top="100" Left="100" >
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="CommandBinding_Executed"/>
+        <CommandBinding Command="cmd:RoutedCommands.dodajDogadjaj" CanExecute="DodajDogadjaj_CanExecute" Executed="DodajDogadjaj_Executed"></CommandBinding>
+        <CommandBinding Command="cmd:RoutedCommands.dodajTip" CanExecute="DodajTip_CanExecute" Executed="DodajTip_Executed"></CommandBinding>
+        <CommandBinding Command="cmd:RoutedCommands.dodajEntitet" CanExecute="DodajEntitet_CanExecute" Executed="DodajEntitet_Executed"></CommandBinding>
+        <CommandBinding Command="cmd:RoutedCommands.tabelaDogadjaja" CanExecute="TabelaDogadjaja_CanExecute" Executed="TabelaDogadjaja_Executed"></CommandBinding>
+        <CommandBinding Command="cmd:RoutedCommands.tabelaTipa" CanExecute="TabelaTipa_CanExecute" Executed="TabelaTipa_Executed"></CommandBinding>
+        <CommandBinding Command="cmd:RoutedCommands.tabelaEntiteta" CanExecute="TabelaEntieta_CanExecute" Executed="TabelaEntieta_Executed"></CommandBinding>
+        <CommandBinding Command="cmd:RoutedCommands.grafik" CanExecute="Grafik_CanExecute" Executed="Grafik_Executed"></CommandBinding>
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="171*"></ColumnDefinition>
+            <ColumnDefinition Width="226*"></ColumnDefinition>
+            <ColumnDefinition Width="803*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition />
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
 
-            <StatusBar HorizontalAlignment="Left" Height="25" Margin="1,4,0,0" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Bottom" Width="1091" FontSize="16">
-                <TextBlock HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="Oznaka:" VerticalAlignment="Top" Width="61" FontSize="16" FontWeight="Bold"/>
-            </StatusBar>
-            <Canvas>
-                <Image Height="485" Width="928" Source="ikonice\mapa1.png" />
-            </Canvas>
-        </Grid>
-    </DockPanel>
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <Button Height="55" Click="Dogadjaj_Click" ToolTip="Kreiraj dogadjaj">Kreiraj</Button>
+            <Button Name="izmeni" Height="55" Click="izmeni_Click" ToolTip="Izmeni dogadjaj">Izmeni</Button>
+            <Button Name="obrisi" Height="55" Click="obrisi_Click" ToolTip="Obrisi dogadjaj">Obrisi</Button>
+            <ListView Name="ocDogadjajListBox" ItemsSource="{Binding ocDogadjaja}" Height="296" BorderThickness="3" MouseDoubleClick="ocDogadjajListBox_MouseDoubleClick" PreviewMouseLeftButtonDown="ocDogadjajListBox_PreviewMouseLeftButtonDown"  MouseMove="ocDogadjajListBox_MouseMove" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" ToolTip="{Binding Oznaka}">
+                            <Image Stretch="Fill" Margin="3" Height="25" Width="25" Source="{Binding IkonicaS}">
+                                <Image.ToolTip>
+                                    <ToolTip Content="{Binding Oznaka}"/>
+                                </Image.ToolTip>
+                            </Image>
+                            <TextBlock Margin="3" Text="{Binding Naziv}" FontSize="16"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackPanel>
+
+        <Canvas ToolTip="{Binding Oznaka}" Name="canvas" Panel.ZIndex="1" Grid.Row="1" MouseMove="Canvas_MouseMove" PreviewMouseLeftButtonUp="canvas_PreviewMouseLeftButtonUp" MouseLeftButtonDown="canvas_MouseLeftButtonDown"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="canvas_Drop" Grid.ColumnSpan="3" Margin="171,0,0,0">
+            <Image Panel.ZIndex="0" Source="images\mapa1.png"  Stretch="Fill" Height="474" Width="1019"/>
+        </Canvas>
+
+            <Menu Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3">
+            <MenuItem Header="Kreiraj" FontSize="16" FontWeight="Bold">
+                <MenuItem Click="Dogadjaj_Click" Header="Novi dogadjaj" Name="Dogadjaj" InputGestureText="CTRL + D"  ToolTip="Kreiranje novog dogadjaja"/>
+                <MenuItem Header="Novi tip" Name="Tip" InputGestureText="CTRL + T"  Click="Tip_Click" ToolTip="Kreiranje novog dogadjaja"/>
+                <MenuItem Header="Nova etiketa" Name="Etiketa" Click="Etiketa_Click"  InputGestureText="CTRL + E"  ToolTip="Kreiranje novog dogadjaja"/>
+            </MenuItem>
+            <MenuItem Header="_Tabela" FontSize="16" FontWeight="Bold">
+                <MenuItem Header="Dogadjaja" Name="Tabela_dogadjaja" Click="Tabela_dogadjaja_Click" InputGestureText="ALT + D" ToolTip="Kreiranje novog dogadjaja"/>
+                <MenuItem Header="Tipova" Name="Tabela_tipova"  Click="Tabela_tipova_Click" InputGestureText="ALT + T" ToolTip="Kreiranje novog tipa"/>
+                <MenuItem Header="Etiketa" Name="Tabela_etiketa"  Click="Tabela_etiketa_Click" InputGestureText="ALT + E" ToolTip="Kreiranje nove etikete"/>
+            </MenuItem>
+            <MenuItem Header="_Grafik" FontSize="16" FontWeight="Bold">
+                <MenuItem Header="Grafik sveta" Name="Grafik_sveta"  Click="Grafik_sveta_Click" InputGestureText="CTRL + G" ToolTip="Prikaz svetske rasprostranjenosti dogadjaja"/>
+            </MenuItem>
+            <MenuItem Header="_Pomoc" FontSize="16" FontWeight="Bold">
+                <MenuItem Header="Pomoc" Name="pomoc" Click="pomoc_Click" InputGestureText="F1" ToolTip="Pomoc"/>
+            </MenuItem>
+        </Menu>
+
+        <StatusBar DataContext="{Binding ElementName=ocDogadjajListBox,Path=SelectedItem}" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,460,0,0" Grid.RowSpan="2" Background="AntiqueWhite">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Label FontSize="14" FontWeight="Bold">Oznaka:</Label>
+                <Label Content="{Binding Oznaka}" Name="oznakaLabel" Width="130" FontSize="14" FontWeight="Bold" FontStyle="Italic"></Label>
+                <Label FontSize="14" FontWeight="Bold">Naziv:</Label>
+                <Label Content="{Binding Naziv}" Name="nazivLabel" Width="130" FontSize="14" FontWeight="Bold" FontStyle="Italic"></Label>
+                <Label FontSize="14" FontWeight="Bold">Datum odrzavanja:</Label>
+                <Label Content="{Binding DatumOdrzavanjaZaTekucuGodinuString}" Name="datumLabel" Width="80" FontSize="14" FontWeight="Bold" FontStyle="Italic"></Label>
+                <Label FontSize="14" FontWeight="Bold" >Cena:</Label>
+                <Label Content="{Binding Cena}" Name="cenaLabel" Width="100" FontSize="14" FontWeight="Bold" ></Label>
+                <Label FontSize="14" FontWeight="Bold">Grad i drzava:</Label>
+                <Label Content="{Binding DrzavaIGradKaoMestoOdrzavanja}" Name="gradIDrzavaLabel" Width="150" FontSize="14" FontWeight="Bold" FontStyle="Italic"></Label>
+                <Label FontSize="14" FontWeight="Bold">Posecnost:</Label>
+                <Label Content="{Binding PosecenostDogadjaja}" Name="posecenostLabel" Width="100" FontSize="14" FontWeight="Bold" FontStyle="Italic"></Label>
+            </StackPanel>
+        </StatusBar>
+
+    </Grid>
+
 </Window>
