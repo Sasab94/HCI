@@ -33,6 +33,7 @@ namespace HCI
         Dogadjaj dogadjaj = new Dogadjaj();
         private Point mousePosition;
         private Image draggedImage;
+        private Image image;
 
 
         public MainWindow()
@@ -181,29 +182,33 @@ namespace HCI
                     p.DaLiJeHumantiarnogKaraktera = d.DaLiJeHumantiarnogKaraktera;
                     p.PosecenostDogadjaja = d.PosecenostDogadjaja;
                     p.DrzavaIGradKaoMestoOdrzavanja = d.DrzavaIGradKaoMestoOdrzavanja;
+                    p.RedniBrojNaCanvasu = d.RedniBrojNaCanvasu;
                     p.P = d.P;
                     p.ShowDialog();
-                    if(p.potvrdi == 1)
+                    if (p.potvrdi == 1)
                     {
-                        foreach (Dogadjaj dogadjaj in ocDogadjaja)
+                        if (p.RedniBrojNaCanvasu != 0)
                         {
-                            if (dogadjaj.Oznaka.Equals(p.Oznaka))
+                            foreach (Dogadjaj dogadjaj in ocDogadjaja)
                             {
-                                Image image = new Image();
-                                BitmapImage bit = new BitmapImage(new Uri(dogadjaj.IkonicaS, UriKind.Absolute));
-                                image.Source = bit;
-                                image.Width = 25;
-                                image.Height = 25;
-                                canvas.Children.RemoveAt(dogadjaj.RedniBrojNaCanvasu+1);
-                                dogadjaj.RedniBrojNaCanvasu = canvas.Children.Count;
+                                if (dogadjaj.Oznaka.Equals(p.Oznaka))
+                                {
+                                    Image image = new Image();
+                                    BitmapImage bit = new BitmapImage(new Uri(dogadjaj.IkonicaS, UriKind.Absolute));
+                                    image.Source = bit;
+                                    image.Width = 25;
+                                    image.Height = 25;
+                                    canvas.Children.RemoveAt(p.RedniBrojNaCanvasu);
+                                    dogadjaj.RedniBrojNaCanvasu = canvas.Children.Count;
 
+                                    Canvas.SetLeft(image, dogadjaj.P.X - 171);
+                                    Canvas.SetTop(image, dogadjaj.P.Y - 25);
+                                    canvas.Children.Add(image);
+                                }
 
-                                Canvas.SetLeft(image, dogadjaj.P.X - 171);
-                                Canvas.SetTop(image, dogadjaj.P.Y - 25);
-                                canvas.Children.Add(image);
                             }
+                            p.potvrdi = 0;
                         }
-                        p.potvrdi = 0;
                     }
                 }
             }
@@ -344,8 +349,14 @@ namespace HCI
             {
                  if ((e.GetPosition(this).X >= d.P.X) && (e.GetPosition(this).X <= d.P.X + 25) && (e.GetPosition(this).Y <= d.P.Y + 25) && (e.GetPosition(this).Y >= d.P.Y))
                 {
-                    MessageBox.Show("Dogadjaji se ne smeju preklapati");
-                    return;
+                    if (image != null)
+                    {
+                        if (!image.Source.ToString().Equals(d.IkonicaS))
+                        {
+                            MessageBox.Show("Dogadjaji se ne smeju preklapati");
+                            return;
+                        }
+                    }
                 }
             }
             if (draggedImage != null)
@@ -364,7 +375,7 @@ namespace HCI
 
         private void canvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            var image = e.Source as Image;
+            image = e.Source as Image;
             if (image != null && !image.Source.ToString().Equals("pack://application:,,,/HCI/;component/images/mapa1.png"))
             {
                 foreach (Dogadjaj d in ocDogadjaja)
@@ -403,6 +414,7 @@ namespace HCI
                     repozitorijumDogadjaja.Obrisi(d);
                     canvas.Children.RemoveAt(d.RedniBrojNaCanvasu);
                     DijalogZaDodavanjeDogadjaja.dogadjaji.Remove(d.Oznaka);
+                    DijalogZaBrisanjeDogadjaja.potvrda = false;
                 }
             } 
             else
